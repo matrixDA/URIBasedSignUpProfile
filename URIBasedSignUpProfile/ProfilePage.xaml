@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="URIBasedSignUpProfile.ProfilePage"
+             Title="ProfilePage">
+    <VerticalStackLayout Margin="20">
+        <Label Text="Hello," FontSize="30" FontAttributes="Bold"/>
+        <Label Grid.Row="0" x:Name="LblUsername1" FontSize="30" FontAttributes="Bold" />
+        <Frame HasShadow="True" Margin="0,40,0,0" Padding="15,25">
+            <Grid RowDefinitions="Auto,*" ColumnDefinitions="*,*" >
+                <Label Grid.Row="0" Grid.Column="0" Text="Username:" FontSize="Subtitle"/>
+                <Label Grid.Row="0" Grid.Column="1" x:Name="LblUsername2" FontSize="Subtitle" />
+                <Label Grid.Row="1" Grid.Column="0" Text="Email:" FontSize="Subtitle" />
+                <Label Grid.Row="1" Grid.Column="1" x:Name="LblEmail" FontSize="Subtitle" />
+            </Grid>
+        </Frame>
+        <Button Text="Signout" Clicked="Button_Clicked" FontSize="Subtitle" Margin="0,20,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>

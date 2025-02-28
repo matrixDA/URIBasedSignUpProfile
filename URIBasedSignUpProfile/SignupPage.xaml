@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="URIBasedSignUpProfile.SignupPage"
+             Title="SignupPage"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout Margin="20" Spacing="20"  >
+        <Label 
+         Text="Signup"
+         FontSize="30"
+         HorizontalOptions="Center"
+         Margin="0,0,0,10"
+         FontAttributes="Bold"/>
+        <Label x:Name="LblVisibleUsername" IsVisible="False" TextColor="Red" Margin="0,0,0,-20" FontSize="Caption"/>
+        <Entry x:Name="username" Placeholder="Enter user name" FontSize="Subtitle" />
+        <Label x:Name="LblVisiblEmail" IsVisible="False" TextColor="Red" Margin="0,0,0,-20" FontSize="Caption"/>
+        <Entry x:Name="email" Placeholder="Enter email" FontSize="Subtitle" />
+        <Label x:Name="LblVisiblePassword" IsVisible="False" TextColor="Red" Margin="0,0,0,-20" FontSize="Caption"/>
+        <Entry x:Name="password" Placeholder="Password" FontSize="Subtitle" IsPassword="True"/>
+        <Label x:Name="LblVisibleConfPassword" IsVisible="False" TextColor="Red" Margin="0,0,0,-20" FontSize="Caption"/>
+        <Entry x:Name="confPassword" Placeholder="Confirm Password" FontSize="Subtitle" IsPassword="True" />
+        <Button Text="Signup" FontSize="Medium" Clicked="Button_Clicked"  />
+    </VerticalStackLayout>
+</ContentPage>
